@@ -23,3 +23,13 @@ extern NSString *OAuthorizationHeaderWithCallback(NSURL *url,
 												  NSString *_oAuthToken,
 												  NSString *_oAuthTokenSecret,
 												  NSString *_oAuthCallback);
+
+extern NSString *OAuthorizationHeaderWithCallbackAndVerifier(NSURL *url,
+												  NSString *method,
+												  NSData *body,
+												  NSString *_oAuthConsumerKey,
+												  NSString *_oAuthConsumerSecret,
+												  NSString *_oAuthToken,
+												  NSString *_oAuthTokenSecret,
+												  NSString *_oAuthCallback,
+                                                  NSString *_oAuthVerifier);
